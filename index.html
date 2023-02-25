@@ -4,122 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet"/>
+    <title>Temperature Converter</title>
+    
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#web">Web Development</a></li>
-            <li><a href="#contect">Contect me</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Temperature Conversion Calculator</h1>
+        <img src="Temperature-img.png">
+<form  id ="tempCalc" onsubmit="calculateTemp(); return false">
+    <div class="container-box">
+        <label for="temp"><h3>Please enter the temperature you'd like to convert</h3></label>
+   <br/><input type="number"name=""id="temp">
+    <select name="temp_diff"id="temp_diff">
+        <option value="sel">Select</option>
+        <option value="cel">Celsius</option>
+        <option value="fah">Forenheit</option>
+        
+    </select><br/>
+    <div class="button">
+        <input type="submit"  name="temp"><br/>
+    
+
     </div>
-    <section id="home">
-        <img src="img17.jpg">
-        <div class="main">
-            <h1 class="headings">I Am <br> Akram Ansari</h1>
-            <button class="btn">Hire me</button>
-        </div>
-    </section>
-            <section id="about">
-                <h1 class="headings">ABOUT ME</h1>
-                <div id="pic">
-                <img src="img1.jpg" alt="">
-                <div id="intro">
-                    <h2>AKRAM ANSARI</h2>
-                    <p> My Neme Is Akram Ansari, I Am Frome Bihar 
-                        And I Complited 10th Bihar School Examination Bord Patna 
-                        And I got 58% Marks, And Complited Diploma In Computer 
-                        Science Engineering Form Maulana Azad National Urdu University 
-                        Bangalore, 
-                        And I Attend The Industrial Training For 6th Months Frome Forture 
-                        Info Tech Pvt Ltd Bangalore, 
-                        And l Pursuing In B.Tech Computer Science Engineering From Maulana 
-                        Azad National Urdu University Hyderabad 2020 To 2024
-                    </p>
-                </div>
-        </section>
-        <section id="Portfolio">
-            <h1 class="headings">PORTFOLIO</h1>
-            <div class="gallery">
-                <img src="img2.jpg" alt="">
-                <img src="img3.jpg" alt="">
-                <img src="img4.jpg" alt="">
-                <img src="img5.jpg" alt=""> 
-                <img src="img6.jpg" alt="">
-                <img src="img8.jpg" alt="">
-            </div>
-        </section>
-        <section id="web">
-            <h1 class="heading">WEB DEVLOPMENT</h1>
-            <div class="conatiner">
-            <div class="box">
-                <img src="img9.png">
-                <h3>HTML</h3>
-                <p>HTML is the standard document format for web pages which is supported by all browsers. They take HTML.....</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img10.png">
-                <h3>CSS</h3>
-                <p>CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img11.png">
-                <h3>Bootstrap</h3>
-                <p>Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites............</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img12.png">
-                <h3>JavaScript</h3>
-                <p>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS.....</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img13.png">
-                <h3>React JS</h3>
-                <p>Let us understand this with a practical example Let us understand this with a practical example </p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img14.png">
-                <h3>JQuery</h3>
-                <p>jQuery is a fast, small, and feature-rich JavaScript library.It makes things like HTML document traversaland</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img15.png">
-                <h3>Angular JS</h3>
-                <p>AngularJS simplifies application development by presenting a higher level of abstraction to the developer...</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            <div class="box">
-                <img src="img16.png">
-                <h3>Node AngularJS</h3>
-                <p>Node.js is a great web framework for beginners because it works great for data-intensive applications, like.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-            </div>
-        </section> 
-        <section id="contect">
-            <div class="footer">
-                <h2>Contact</h2>
-                <p>My Name Akram Ansari<br>I Complited diploma in CSE from MANUU Bangalore<br> And i Pursuing in B.tech MANUU Hyderabad</p>
-                    <div class="socials">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-square-youtube"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-square-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                </div>
-            </div>
-        </section>
-    </body>
+    <br>
+    
+    <span id="resultContainer"></span>
+
+    </div>
+
+</form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
