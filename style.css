@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@media(max-width:991px){
+    *{
+        padding: 20px;
+    }
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img1.jpg);
+    background-size: cover;
+    background-size: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(82, 82, 99);
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 40px;
+}
+.navbar ul {
+    list-style: none;
+    margin-right: 40px;
+}
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+.navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    
+}
+.navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+.sub-menu{
+    display: none;
+}
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background:  rgb(82, 82, 99);
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.navbar ul li :hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li :hover .sub-menu ul li{
+    width: 80px;
+    padding: 5px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content h1 p{
+    margin: 200px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
